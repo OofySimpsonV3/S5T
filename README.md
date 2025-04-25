@@ -145,6 +145,7 @@ Feel free to contribute to this project with any issues or pull requests.
 
 # License
 Go wild! :) 
+
 (THIS DOESN'T INCLUDE THE DEPENDENCIES - Refer to Credits heading below).
 
 # Credids
