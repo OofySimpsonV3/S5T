@@ -6,7 +6,8 @@
 from ytmusicapi import YTMusic
 from yt_dlp import YoutubeDL
 import sys
-from pprint import pprint
+import os
+# from pprint import pprint # For debugging :)
 
 # FETCH SONG FUNCTION
 def fetchSong(query):
@@ -15,7 +16,7 @@ def fetchSong(query):
     url = search_results[0]["videoId"]
 
     opts = {
-        "outtmpl": "~/Music/%(title)s-%(id)s.%(ext)s",
+        "outtmpl": musicDir + "/%(title)s-%(id)s.%(ext)s",
         "embed-thumbnail": True,
         "format": "bestaudio/best",
         "writethumbnail": True,
@@ -42,12 +43,12 @@ def fetchSong(query):
 def fetchAlbum(query):
     search_results = ytmusic.search(query, filter="albums")
 
-    pprint(search_results)
+    # pprint(search_results)
 
     url = "https://music.youtube.com/playlist?list=" + search_results[0]["playlistId"]
 
     opts = {
-        "outtmpl": "~/Music/%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s",
+        "outtmpl": musicDir + "/%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s",
         "embed-thumbnail": True,
         "format": "bestaudio/best",
         "writethumbnail": True,
@@ -74,7 +75,7 @@ def fetchAlbum(query):
 # FETCH YOUTUBE URL
 def fetchUrl(url):
     opts = {
-        "outtmpl": "~/Music/%(title)s.%(ext)s",
+        "outtmpl": musicDir + "/%(title)s.%(ext)s",
         "embed-thumbnail": True,
         "format": "bestaudio/best",
         "writethumbnail": True,
@@ -99,6 +100,17 @@ def fetchUrl(url):
 
 # STARTUP
 if __name__ == "__main__":
+    # Find Music Folder and assign VARIABLE accordingly (ensuring Music folder exists)
+    global musicDir
+    musicDir = os.path.expanduser('~') + '/Music'
+    if not os.path.exists(musicDir):
+        try:
+            os.mkdir(musicDir)
+            print("[ WARNING ] S5T was unable to find a Music folder within your home-directory, so we have created one for you. Here are the details: \n" + str(musicDir))
+        except Exception as e:
+            print("[ ERROR ] S5T unfortunately cannot detect a Music folder within your home-directory, and is unable to create one. More details: " + str(e))
+    
+    # Declare Command Usage Instructions VARIABLE
     usage = """
 Arguments:
 
