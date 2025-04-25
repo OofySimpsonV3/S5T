@@ -1,5 +1,4 @@
-# S5T
-Super Simple Song Search (and) Sampling Tool
+# S5T - Super Simple Song Search (and) Sampling Tool
 
 S5T is a program written in **Python**, utilising the `yt-dlp` and `ytmusicapi` libraries. 
 
