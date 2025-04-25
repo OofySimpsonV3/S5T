@@ -11,6 +11,11 @@ S5T is available accross **all operating systems** (as long as Python + **depend
 I do not encourage piracy, this software is intended for the user's own uploaded content or sampling royalty free audio. Use responsibly! ;)
 
 # Universal Installation
+*DISCLAIMER: **FFMPEG** is required to convert the downloaded media to the appropriate MP3 format. Please ensure this program is present and installed on the system.*
+
+*Alternatively, if you are running Windows, having `ffmpeg.exe` present in the program's folder will also work.*
+*This will be mentioned briefly later on :)*
+
 ## To get started, simply **clone this repository**.
 If you are currently in a **terminal / command prompt**, type the following command:
 
@@ -43,6 +48,8 @@ This will download all the dependencies listen within the `requirements.txt` fil
 *Alternatively*, you may also install the dependencies using the following command:
 
 ```pip install -U yt-dlp ytmusicapi```
+
+Now that we have downloaded the files for the software, it would also be a good time, for **Windows** users, to *place the **`ffmpeg.exe`** binary in the repository folder, with the `main.py`, etc.
 
 # Running the software
 
