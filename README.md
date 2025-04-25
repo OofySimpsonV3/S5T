@@ -14,6 +14,7 @@ I do not encourage piracy, this software is intended for the user's own uploaded
 # Universal Installation
 ## To get started, simply **clone this repository**.
 If you are currently in a **terminal / command prompt**, type the following command:
+
 ```git clone https://github.com/OofySimpsonV3/S5T```
 
 If ^this command returns an error, or if you don't have GIT installed, no worries! Simply follow these instructions:
