@@ -1,12 +1,12 @@
 # S5T - Super Simple Song Search (and) Sampling Tool
 
-S5T is a program written in **Python**, utilising the `yt-dlp` and `ytmusicapi` libraries. 
+S5T is a **<ins>terminal-based</ins>** program written in **Python**, utilising the `yt-dlp` and `ytmusicapi` libraries. 
 
 S5T allows you to quickly and efficiently fetch **any Youtube Music search query** (song or album) or **URL** (also song or album / playlist), in lightweight 320K **MP3** format.
 
 S5T ensures the downloaded audio contains the appropriate **metadata**, ensuring it is compatible with music players and other software.
 
-S5T is a **<ins>terminal-based</ins>** program, and is available accross all operating systems (as long as Python + dependencies are installed; see `requirements.txt`).
+S5T is available accross **all operating systems** (as long as Python + **dependencies** are installed; see `requirements.txt`).
 
 I do not encourage piracy, this software is intended for the user's own uploaded content or sampling royalty free audio. Use responsibly! ;)
 
