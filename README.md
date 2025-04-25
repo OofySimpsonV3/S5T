@@ -4,7 +4,7 @@ S5T is a **<ins>terminal-based</ins>** program written in **Python**, utilising 
 
 S5T allows you to quickly and efficiently fetch **any Youtube Music search query** (song or album) or **URL** (also song or album / playlist), in lightweight 320K **MP3** format.
 
-S5T ensures the downloaded audio contains the appropriate **metadata**, ensuring it is compatible with music players and other software.
+S5T downloads your music in the form of MP3's, which will also contain the appropriate **metadata** (album, artist, etc), ensuring your files are compatible with music players and other software!
 
 S5T is available accross **all operating systems** (as long as Python + **dependencies** are installed; see `requirements.txt`).
 
