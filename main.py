@@ -126,31 +126,40 @@ Searches and downloads the first album result in Youtube Music.
 --help
 Shows a list of commands.
 """
-    
+
+    # Detect if the first argument was received (--song, --album, etc)
     try:
         arg1 = str(sys.argv[1])
     except:
         print(usage) 
         sys.exit()
 
+    # Detect if a second argument was also received (URL / Search Query)
     try:
         arg2 = str(sys.argv[2])
     except:
         pass
 
+    # Check if first argument is valid and, if so, attempt to initiate YTMusicAPI Object
     try:
-        ytmusic = YTMusic()
-        
         if arg1 == "--album":
             fetchAlbum(arg2)
+            
         elif arg1 == "--song":
             fetchSong(arg2)
+            
         elif arg1 == "--url":
             fetchUrl(arg2)
+            
         elif arg1 == "--help":
             print(usage)
+            
         else:
             print("invalid command! Append '--help' for a list of commands.") 
+            sys.exit(1)
+            
+        # Initiate YTMusicAPI Object
+        ytmusic = YTMusic()
             
     except Exception as e:
         print(e)
