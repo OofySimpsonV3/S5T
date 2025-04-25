@@ -156,6 +156,6 @@ Go wild! :)
 (THIS DOESN'T INCLUDE THE DEPENDENCIES - Refer to Credits heading below).
 
 # Credids
-HUGE thanks to the developers of [The YT-DLP Project](https://github.com/yt-dlp/yt-dlp) and The [YTMusicAPI](https://pypi.org/project/ytmusicapi/). If it wansn't for their hard work and software, this project simply wouldn't be as good as it is now.
+HUGE thanks to the developers of [The YT-DLP Project](https://github.com/yt-dlp/yt-dlp), [The YTMusicAPI](https://pypi.org/project/ytmusicapi/) and [The FFMPEG Project](https://ffmpeg.org/about.html). If it wansn't for their hard work and software, this project simply wouldn't be as good as it is now.
 
 Enjoy!
