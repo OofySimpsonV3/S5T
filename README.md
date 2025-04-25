@@ -112,9 +112,11 @@ This will ensure the alias is assigned each time a terminal session is opened.
 To set up a permenant alias in the Windows command prompt, it is just a tad more tricky.
 Luckily, just like UNIX, these one-time steps will ensure a future ease of access, and can also be removed any time.
 
-In Windows, the `doskey` command is used to create custom aliases named `macro`s.
+In Windows, the `DOSKEY` command is used to create custom aliases, in this case named `macro`'s!
 
-To begin, we will need to create a Batch file which will store any custom aliases (hereby referred to as `macro`s).
+To begin, we will need to create a Batch file which will store any custom aliases (hereby referred to as macros).
+
+*Please note, any other macros can be made at any time using this batch file. If you'd like to make or experiment with future macros, please ensure the file path is remembered or stored somewhere safe!*
 
 Anywhere in your Windows home folder, create a file named `macros.bat`, ensuring the filepath is remembered, as it would be required quite shortly.
 
@@ -142,4 +144,10 @@ Should you experience any issues with this software, such as bugs, errors, incon
 Feel free to contribute to this project with any issues or pull requests.
 
 # License
-Go wild! :)
+Go wild! :) 
+(THIS DOESN'T INCLUDE THE DEPENDENCIES - Refer to Credits heading below).
+
+# Credids
+HUGE thanks to the developers of [The YT-DLP Project](https://github.com/yt-dlp/yt-dlp) and The [YTMusicAPI](https://pypi.org/project/ytmusicapi/). If it wansn't for their hard work and software, this project simply wouldn't be as good as it is now.
+
+Enjoy!
