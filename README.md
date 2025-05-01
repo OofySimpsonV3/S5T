@@ -90,7 +90,7 @@ The software uses an API which ensures the search feature is nice and flexible. 
 For example, `python main.py --song "Gohst Town by Specials"` would download the same song as the previous example.
 
 # Housekeeping
-The software is now officially installed! However, going to the repository folder and typing `python main.py...` every time for a song or album can drastically affect the efficiency of the tool.
+The software is now officially downloaded and operational! However, going to the repository folder and typing `python main.py...` every time for a song or album can drastically affect the efficiency of the tool.
 
 To ensure future use is **nice and simple**, we can assign the program to our own, custom command / alias!
 
